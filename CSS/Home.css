@@ -1,0 +1,343 @@
+/* Header */
+
+header {
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+    /* background: var(--color-bg); */
+    /* box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.2); */
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.header__left p {
+    margin: 1rem 0 2.4rem;
+}
+
+
+/* Categories */
+
+.categories {
+    background: var(--color-white);
+}
+
+.categories h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.categories__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /* gap: 4rem; */
+}
+
+.categories__left {
+    margin-right: 4rem;
+}
+
+.categories__left p {
+    margin: 1rem 0 3rem;
+}
+
+.categories__right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.category {
+    background: var(--color-bg);
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.category:hover {
+    background: var(--color-danger);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    color: var(--color-white);
+}
+
+.category:nth-child(1):hover .category__icon {
+    background: var(--color-danger);
+}
+
+.category:nth-child(2) .category__icon {
+    background: var(--color-bg);
+}
+
+.category:nth-child(2):hover .category__icon {
+    background: var(--color-danger);
+}
+
+.category:nth-child(3):hover .category__icon {
+    background: var(--color-danger);
+}
+
+.category:nth-child(4):hover .category__icon {
+    background: var(--color-danger);
+}
+
+.category:nth-child(5):hover .category__icon {
+    background: var(--color-danger);
+}
+
+.category:nth-child(6):hover .category__icon {
+    background: var(--color-danger);
+}
+
+.category:nth-child(3) .category__icon {
+    background: var(--color-bg);
+}
+
+.category:nth-child(4) .category__icon {
+    background: var(--color-bg);
+}
+
+.category:nth-child(5) .category__icon {
+    background: var(--color-bg);
+}
+
+.category:nth-child(6) .category__icon {
+    background: var(--color-bg);
+}
+
+.category__icon {
+    background: var(--color-bg);
+    padding: 0.4rem;
+    font-size: 35px;
+    border-radius: 0.9rem;
+    text-align: center;
+}
+
+.category__icon i {
+    color: var(--color-black);
+}
+
+.category__icon i:hover {
+    color: var(--color-white);
+}
+
+.category h5 {
+    margin: 2rem 0 1rem;
+    text-align: center;
+}
+
+.category p {
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+
+/* popular course */
+
+.courses {
+    padding-top: 10rem;
+}
+
+.courses__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.course {
+    text-align: center;
+    border: 1px solid transparent;
+    background: var(--color-light);
+    transition: var(--transition);
+}
+
+.course:hover {
+    background: transparent;
+    border-color: var(--color-black);
+}
+
+.course__image {
+    width: 370px;
+    height: 250px;
+    margin: auto;
+}
+
+.course__info {
+    padding: 2rem;
+}
+
+.course__info p {
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+
+
+/* Testimonial */
+
+.testimonials__container {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.testimonial {
+    padding-top: 2rem;
+}
+
+.avatar {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 1rem solid var(--color-light);
+}
+
+.testimonial__info {
+    text-align: center;
+}
+
+.testimonial__body {
+    background: var(--color-light);
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+    text-align: center;
+}
+
+.testimonial__body p {
+    margin-top: 1.2rem;
+}
+
+.testimonial__body::before {
+    content: "";
+    display: block;
+    background: var(--color-light);
+    width: 3rem;
+    height: 3rem;
+    background: linear-gradient(135deg, transparent, var(--color-light), var(--color-light), var(--color-light));
+    position: absolute;
+    left: 45%;
+    top: -1.5rem;
+    transform: rotate(45deg);
+}
+
+#features {
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#features .fea-base {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    margin-bottom: 5rem;
+}
+
+#features .fea-box {
+    background: var(--color-light);
+    border-radius: 10px;
+    opacity: 0.75;
+    text-align: center;
+    padding: 1rem;
+    transition: var(--transition);
+}
+
+#features .fea-box i {
+    font-size: 2.3rem;
+    color: var(--color-black);
+}
+
+#features .fea-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-black);
+    padding: 13px 0 7px 0;
+    cursor: pointer;
+}
+
+#features .fea-box:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #4f4f4f;
+    border-radius: 4px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    color: black;
+    z-index: 1;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #f75842;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button:hover {
+    color: #ffffff;
+    border: 1px solid #f75842;
+}
+
+.button:hover:before {
+    top: -35%;
+    background-color: #f75842;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+    top: -45%;
+    background-color: #f75842;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}

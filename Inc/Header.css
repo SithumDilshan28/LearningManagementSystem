@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    /* font-family: 'Titillium Web', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 8.4);
+    --color-white: #fff;
+    --color-light: #ffffffb3;
+    --color-black: #000;
+    /* --color-bg: #1f2641; */
+    --color-bg: #f7f9fa;
+    /* --color-bgl: #2e3267; */
+    /* --color-bg2: #424898; */
+    --container-width-1g: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+    --transition: all 400ms ease;
+}
+
+body {
+    /* color: var(--color-white); */
+    color: var(--color-black);
+    background: var(--color-bg);
+    /* background-image: url(../Img/bg-texture.png); */
+}
+
+.container {
+    width: var(--container-width-1g);
+    margin: 0 auto;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+p {
+    letter-spacing: .5px;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+a {
+    color: var(--color-black);
+    font-family: 'Rajdhani', sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    color: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--color-black);
+    border-color: var(--color-black);
+}
+
+.btn-primary {
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+.title {
+    font-size: 2rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+/* .title {
+    width: 200px;
+    line-height: 1.2;
+} */
+
+.custom__links {
+    text-decoration: none;
+}
+
+
+/* nav */
+
+nav {
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    z-index: 11;
+}
+
+.window-scroll {
+    background: var(--color-white);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    display: none;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 2.75rem;
+    /* display: none; */
+}
+
+.joinBtn {
+    background: var(--color-danger);
+    padding: 15px;
+    border-radius: 15px;
+    color: var(--color-white);
+}
+
+.joinBtn:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+.nav__menu a {
+    color: #1c1d1f;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.nav__menu a:hover {
+    color: #f58c14;
+}
+
+i {
+    color: var(--color-black);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

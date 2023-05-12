@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap');
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+body {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+
+/* plus button add */
+
+.box {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    margin-bottom: 30px;
+}
+
+i {
+    font-size: 1.5rem;
+}
+
+small {
+    font-size: 1.2rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+textarea {
+    resize: none;
+}
+
+p {
+    color: black;
+}

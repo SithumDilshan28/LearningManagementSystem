@@ -1,0 +1,51 @@
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic&display=swap'); */
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+
+/* plus button add */
+
+.box {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    margin-bottom: 30px;
+}
+
+i {
+    font-size: 1.5rem;
+}
+
+small {
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    transition: all 400ms ease;
+    /* padding-top: 10px; */
+    color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+textarea {
+    resize: none;
+}
+
+table,
+th,
+td {
+    color: rgb(255, 255, 255);
+}
